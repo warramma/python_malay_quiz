@@ -18,6 +18,16 @@ quiz = {
     '4' : Question('#4' + quiz_questions[3], 'c')
 }
 
-for question in quiz:
-    quiz[question].ask_question()
+score = 0
 
+for question in quiz:
+    answer = quiz[question].ask_question()
+    print('your answer is ' + str(answer))
+    if(answer == quiz[question].answer):
+        score = score + 1
+    
+print('You have completed the quiz!')
+if score < 4:
+    print('Your score is ' + str(score) + ' out of 4. Better luck next time!')
+else:
+    print('Your score is ' + str(score) + ' out of 4. Congratulations!!!')
