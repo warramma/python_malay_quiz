@@ -4,5 +4,5 @@ class Question:
         self.prompt = prompt
         self.answer = answer
     
-    def display_question(self):
+    def ask_question(self):
         print(self.prompt)

@@ -19,5 +19,5 @@ quiz = {
 }
 
 for question in quiz:
-    quiz[question].display_question()
+    quiz[question].ask_question()
 
